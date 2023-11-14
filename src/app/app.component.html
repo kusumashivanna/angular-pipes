@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+{{currentDate|datePipe}}//datae
+{{currentDate|date:'dd/mm/yyyy'}}
+<input [(ngModel)]="data" />
+{{data|stringreverse}}
+{{data|uppercase}}//uppercase
+{{data|lowercase}}//lowercase
+{{data|slice:0:4}}//slice
+{{123.453389|number:'1.3-3'}}//decimal
+{{123.453389|currency:'USD'}}//currency
+{{ (123.453389/100) | percent: '1.1-1'}}//percentage
